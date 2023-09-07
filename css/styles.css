@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HelveticaLTStd-Light';
+    src: url('../fonts/HelveticaLTStd-Light.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BaskervilleBold';
+    src: url('../fonts/BaskervilleBold.ttf') format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width:1920px) {
+    h1 {
+        font-family: 'BaskervilleBold', serif;
+        font-size: 60px;
+        margin-bottom: 0vh;
+    }
+
+    h2 {
+        font-family: 'BaskervilleBold', serif;
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0vh;
+    }
+
+    h3 {
+        font-size: 40px;
+        margin-bottom: 0vh;
+    }
+
+    h4 {
+        font-size: 35px;
+        margin-bottom: 0vh;
+        margin-top: 2vh;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    body,
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    body {
+        font-family: 'HelveticaLTStd-Light', sans-seriff;
+        background-color: #FAFAFF;
+    }
+
+    header {
+        font-family: 'Helvetica', sans-seriff;
+        background-color: #1e1e1e;
+        color: #FAFAFF;
+        padding: 6px;
+    }
+
+    .navbar {
+        margin-left: 10vh;
+        margin-right: 10vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo a {
+        font-size: 30px;
+        text-decoration: none;
+        color: #FAFAFF;
+        font-weight: bold;
+    }
+
+    .menu li {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #FAFAFF;
+        font-size: 20px;
+        transition: color 0.3s;
+        transition: font-size 0.3s;
+    }
+
+    .menu a:hover {
+        font-size: 25px;
+        color: #FF6150;
+    }
+
+    .idiomas {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flag img {
+        margin: 1vh;
+        width: 5vh;
+        height: 3vh;
+        transition: transform 0.3s ease;
+    }
+
+    .flag img:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
